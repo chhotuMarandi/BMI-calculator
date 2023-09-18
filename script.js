@@ -1,4 +1,19 @@
-let age = document.getElementById("age");
+
+function calculateBMI(){
+  let height = document.getElementById('height-input').value;
+  let weight = document.getElementById('weight-input').value;
+
+  (document.getElementById('bmi').innerHTML =
+    (weight / height / height) * 10000);
+}
+
+calculateBMI();
+
+
+
+
+
+/* let age = document.getElementById("age");
 let height = document.getElementById("height-input").value;
 let weight = document.getElementById("weight-input").value;
 
@@ -38,4 +53,4 @@ console.log(height)
  let submit = document.getElementById('submit');
  submit.addEventListener('click', calculateBMI);
 
-// calculateBMI();
+// calculateBMI(); */
