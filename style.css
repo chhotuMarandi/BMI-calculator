@@ -1,0 +1,29 @@
+body {
+ width: 100%;
+ height: 100vh;
+}
+
+input {
+ margin-left: 1em;
+}
+
+.container {
+ background-color: #d4d4d4;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.age-field{
+ display: flex;
+}
+
+.gender-field{
+ display: flex;
+}
+
+.mass-field{
+ display: inline;
+}
+
