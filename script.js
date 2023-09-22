@@ -1,8 +1,11 @@
 
 
 function calculateBMI() {
-  let height = document.getElementById('height-input').value;
-  let weight = document.getElementById('weight-input').value;
+  let heightInput = document.getElementById('height-input');
+  let weightInput = document.getElementById('weight-input');
+
+  let height = heightInput.value;
+  let weight = weightInput.value;
 
   let bmiResult = document.getElementById('bmi');
 
@@ -21,8 +24,21 @@ function calculateBMI() {
 
   let clear = document.getElementById('clear');
 
-  clear.addEventListener('click', () => {
-    console.log('hi');
-  });
+  clear.addEventListener("click",function(){
+    heightInput.value = "";
+    weightInput.value = "";
+    bmiResult.innerHTML = "";
+  })
+
+  // clear.addEventListener("click",function(){
+  //   console.log("hi")
+  //   height ="";
+  //   bmiResult.innerHTML = "";
+  // })
+  // clear.addEventListener('click', () => {
+  //   height.value = "";
+  //   weight.value = "";
+  //   console.log("hi")
+  // });
 }
 
